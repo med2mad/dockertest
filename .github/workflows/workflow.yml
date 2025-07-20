@@ -16,10 +16,10 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build the Docker image
-        run: docker build -t imaneName:tagname .
+        run: docker build -t imanename:tagname .
 
       - name: Run Docker container
-        run: docker run -d -p 4000:4000 --name containerName imageName:tagname
+        run: docker run -d -p 4000:4000 --name containerName imagename:tagname
 
       - name: Check if server is running
         run: |
